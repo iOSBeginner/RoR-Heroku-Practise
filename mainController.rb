@@ -11,6 +11,8 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: "Welcome to http://sitepoint.com")
     when '/topics'
         bot.api.send_message(chat_id: message.chat.id, text: "topics text")
+    when '/subscribe_warning'
+        bot.api.send_message(chat_id: message.chat.id, text: "You enable the subscribe warning functioin, bot will tell you when there is a weather warning.")
     else
         bot.api.send_message(chat_id: message.chat.id, text: "I don't understand what you say....")
     end
