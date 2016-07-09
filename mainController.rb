@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'telegram/bot'
 token = '240556961:AAEP-A47vhju8Vy3P7C7vZZTdGseOpdmY9I'
 
